@@ -81,7 +81,7 @@ with st.sidebar:
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
-    background-image: url('https://www.veeqo.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fhfb264dqso7g%2F4QovdfnQYcBgP0X4PN0QfM%2F6313238ef1c4def0614eb43b209bbf5b%2Fdemand-forecasting.jpg&w=2560&q=75');
+    background-image: url('https://www.cmu.edu/news/stories/archives/2017/september/images/flu-forecast_900x600-min.jpg');
     background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
     background-position: center;  
     background-repeat: no-repeat;

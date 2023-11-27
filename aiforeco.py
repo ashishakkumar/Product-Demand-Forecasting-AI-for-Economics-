@@ -120,7 +120,7 @@ if choice == 'Home Page' :
     page_bg_img = '''
     <style>
     body {
-    background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+    background-image: url("demand-forecasting.jpg");
     background-size: cover;
     }
     </style>

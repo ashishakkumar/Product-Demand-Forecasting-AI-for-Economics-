@@ -9,3 +9,4 @@ plotly.express==0.4.1
 pandas_profiling==3.6.6
 streamlit_pandas_profiling==0.1.3
 joblib ==1.2.0
+scikit-learn ==1.2.2

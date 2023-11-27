@@ -50,7 +50,7 @@ with st.sidebar:
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
-    background-image: url("https://neoris.com/documents/20126/241879/data-forecasting.jpg/e49cd67c-e9f2-d08b-ccbc-4aa7e3b4d472?t=1664385965910");
+    background-image: url("https://img.freepik.com/free-vector/blank-blue-halftone-background_53876-114466.jpg?w=2000&t=st=1701107672~exp=1701108272~hmac=e0913e74b89449f68dc3104b40692e67a593a6dd6a068e663a8ee074827c2f88");
     background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
     background-position: center;  
     background-repeat: no-repeat;

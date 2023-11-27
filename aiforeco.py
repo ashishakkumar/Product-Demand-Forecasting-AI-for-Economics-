@@ -356,12 +356,12 @@ if choice == 'Home Page' :
 
 
 
-if choice == "About data" :
-    st.title("Automated Exploratory Data Analysis")
-    prep = pd.read_csv('data.csv')
-    prep = prep.dropna()
-    profile_report = prep.profile_report()
-    st_profile_report(profile_report)
+# if choice == "About data" :
+#     st.title("Automated Exploratory Data Analysis")
+#     prep = pd.read_csv('data.csv')
+#     prep = prep.dropna()
+#     profile_report = prep.profile_report()
+#     st_profile_report(profile_report)
 
 
 # if choice == 'XGBoost' : 

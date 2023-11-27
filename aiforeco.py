@@ -78,17 +78,27 @@ with st.sidebar:
 
 
 # Set the background image
+# background_image = """
+# <style>
+# [data-testid="stAppViewContainer"] > .main {
+#     background-image: url('https://neoris.com/documents/20126/241879/data-forecasting.jpg/e49cd67c-e9f2-d08b-ccbc-4aa7e3b4d472?t=1664385965910');
+#     background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
+#     background-position: center;  
+#     background-repeat: no-repeat;
+# }
+# </style>
+# """
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
     background-image: url('https://neoris.com/documents/20126/241879/data-forecasting.jpg/e49cd67c-e9f2-d08b-ccbc-4aa7e3b4d472?t=1664385965910');
-    background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
+    background-size: 100vw 100vh;  
     background-position: center;  
     background-repeat: no-repeat;
+    backdrop-filter: blur(10px);  # Adjust the blur intensity as needed
 }
 </style>
 """
-
 st.markdown(background_image, unsafe_allow_html=True)
 
 

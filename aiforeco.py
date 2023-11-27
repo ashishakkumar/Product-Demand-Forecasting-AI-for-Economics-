@@ -60,23 +60,21 @@ background_image = """
 
 st.markdown(background_image, unsafe_allow_html=True)
 
-st.text_input("", placeholder="Streamlit CSS ")
-
-input_style = """
-<style>
-input[type="text"] {
-    background-color: transparent;
-    color: #a19eae;  // This changes the text color inside the input box
-}
-div[data-baseweb="base-input"] {
-    background-color: transparent !important;
-}
-[data-testid="stAppViewContainer"] {
-    background-color: transparent !important;
-}
-</style>
-"""
-st.markdown(input_style, unsafe_allow_html=True)
+# input_style = """
+# <style>
+# input[type="text"] {
+#     background-color: transparent;
+#     color: #a19eae;  // This changes the text color inside the input box
+# }
+# div[data-baseweb="base-input"] {
+#     background-color: transparent !important;
+# }
+# [data-testid="stAppViewContainer"] {
+#     background-color: transparent !important;
+# }
+# </style>
+# """
+# st.markdown(input_style, unsafe_allow_html=True)
 
 
 # st.markdown(background_image, unsafe_allow_html=True)

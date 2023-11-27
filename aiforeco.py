@@ -171,7 +171,7 @@ if choice == 'Home Page' :
     fig_2.update_layout(margin=dict(r=25))
     st.plotly_chart(fig_2, use_container_width=True)
 
-    best_random_loaded = joblib.load('https://raw.githubusercontent.com/ashishakkumar/Product-Demand-Forecasting-AI-for-Economics-/main/best_random_model.joblib')
+    best_random_loaded = joblib.load('best_random_model.joblib')
 
     y_pred = best_random_loaded.predict(X_test)
 

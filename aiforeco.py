@@ -50,7 +50,7 @@ with st.sidebar:
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
-    background-image: url("https://github.com/ashishakkumar/Product-Demand-Forecasting-AI-for-Economics-/blob/main/jpg.png");
+    background-image: url("https://neoris.com/documents/20126/241879/data-forecasting.jpg/e49cd67c-e9f2-d08b-ccbc-4aa7e3b4d472?t=1664385965910");
     background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
     background-position: center;  
     background-repeat: no-repeat;
@@ -115,7 +115,7 @@ if choice == 'Home Page' :
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
 
-    text = "Welcome to this interface. We have forecasted the Product Demand for particular stores based on the Poblem Statement as described"
+    text = "Welcome to this interface. We have forecasted the Product Demand for particular stores based on the Problem Statement as described"
     speed = 8
     typewriter(text=text, speed=speed)
 

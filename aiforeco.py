@@ -121,7 +121,7 @@ if choice == 'Home Page' :
 
     fig_2.add_trace(go.Scatter(x=prep.index, y=prep['units_sold'],
                              mode='lines', name='Total SKU Units Sold with time'))
-    fig_2.update_layout(title_text="The data Distribution over time", margin=dict(r=25)))
+    fig_2.update_layout(title_text="The data Distribution over time", margin=dict(r=25))
     st.plotly_chart(fig_2, use_container_width=True)
 
     best_random_loaded = joblib.load('best_random_model.joblib')

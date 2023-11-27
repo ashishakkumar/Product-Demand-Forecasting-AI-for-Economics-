@@ -34,19 +34,52 @@ with st.sidebar:
     # st.info("This application allows you to predict the total electricity demand (in Million Units) for Andhra Pradesh")
 
 
+# background_image = """
+# <style>
+# [data-testid="stAppViewContainer"] > .main {
+#     background-image: url('https://raw.githubusercontent.com/ashishakkumar/Product-Demand-Forecasting-AI-for-Economics-/main/jpg.png');
+#     background-size: 100vw 100vh;  
+#     background-position: center;  
+#     background-repeat: no-repeat;
+#     backdrop-filter: blur(20px);  # Adjust the blur intensity as needed
+# }
+# </style>
+# """
+
+
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
-    background-image: url('https://raw.githubusercontent.com/ashishakkumar/Product-Demand-Forecasting-AI-for-Economics-/main/jpg.png');
-    background-size: 100vw 100vh;  
+    background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+    background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
     background-position: center;  
     background-repeat: no-repeat;
-    backdrop-filter: blur(20px);  # Adjust the blur intensity as needed
 }
 </style>
 """
 
 st.markdown(background_image, unsafe_allow_html=True)
+
+st.text_input("", placeholder="Streamlit CSS ")
+
+input_style = """
+<style>
+input[type="text"] {
+    background-color: transparent;
+    color: #a19eae;  // This changes the text color inside the input box
+}
+div[data-baseweb="base-input"] {
+    background-color: transparent !important;
+}
+[data-testid="stAppViewContainer"] {
+    background-color: transparent !important;
+}
+</style>
+"""
+st.markdown(input_style, unsafe_allow_html=True)
+
+
+# st.markdown(background_image, unsafe_allow_html=True)
 
 
 

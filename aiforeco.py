@@ -32,6 +32,8 @@ with st.sidebar:
     st.title("Product Demand Forecasting (AI for Economics)")
     choice = st.radio("Navigation", ["Home Page", "About data"], index=0)
     # st.info("This application allows you to predict the total electricity demand (in Million Units) for Andhra Pradesh")
+
+
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
@@ -39,7 +41,7 @@ background_image = """
     background-size: 100vw 100vh;  
     background-position: center;  
     background-repeat: no-repeat;
-    backdrop-filter: blur(10px);  # Adjust the blur intensity as needed
+    backdrop-filter: blur(20px);  # Adjust the blur intensity as needed
 }
 </style>
 """

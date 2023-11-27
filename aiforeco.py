@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 import plotly.express as px
 import urllib.request
 import datetime
-import pandas_profiling
+# import pandas_profiling
 import joblib
 import xgboost as xgb
 from xgboost import plot_importance, plot_tree

@@ -5,7 +5,6 @@ import pandas as pd
 import streamlit as st
 import urllib.request
 from math import sqrt
-from sklearn.metrics import mean_squared_error
 from sklearn.ensemble import RandomForestClassifier
 import plotly.express as px
 import urllib.request

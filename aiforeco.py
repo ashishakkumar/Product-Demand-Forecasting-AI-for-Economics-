@@ -99,6 +99,7 @@ background_image = """
 }
 </style>
 """
+
 st.markdown(background_image, unsafe_allow_html=True)
 
 

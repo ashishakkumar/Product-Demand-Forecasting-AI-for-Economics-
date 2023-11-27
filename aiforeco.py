@@ -32,62 +32,6 @@ with st.sidebar:
     st.title("Product Demand Forecasting (AI for Economics)")
     choice = st.radio("Navigation", ["Home Page", "About data"], index=0)
     # st.info("This application allows you to predict the total electricity demand (in Million Units) for Andhra Pradesh")
-
-
-
-
-# page_bg_img = f'''
-# <style>
-# [data-testid="stAppViewContainer"] > .main {{ 
-# background-image: url("/Users/ashish/Documents/aiforeco/demand-forecasting.jpg");
-# background-size: cover;
-# }}
-# [data-testid="stHeader"] {{
-# background: rgba(0,0,0,0);
-# }}
-# [data-testid="stToolbar"] {{
-# right: 2rem;
-# }}
-# </style>
-# '''
-# st.markdown(page_bg_img, unsafe_allow_html=True)
-# page_bg_img = '''
-# <style>
-# body {
-#     background-image: url("https://cdn-gakoi.nitrocdn.com/UYXSDHrYcEMbBLuUZWqNsvzHQVDdOSSE/assets/images/optimized/rev-9a7d9bf/www.nuaig.ai/wp-content/uploads/2020/10/demand-forecasting-1-2048x1070.jpg");
-#     background-size: cover;
-# }
-# </style>
-# '''
-
-# st.markdown(page_bg_img, unsafe_allow_html=True)
-
-# page_bg_img = '''
-# <style>
-# body {
-# background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
-# background-size: cover;
-# }
-# </style>
-# '''
-
-# st.markdown(page_bg_img, unsafe_allow_html=True)
-
-# original_title = '<h1 style="font-family: serif; color:white; font-size: 20px;">Streamlit CSS Styling✨ </h1>'
-# st.markdown(original_title, unsafe_allow_html=True)
-
-
-# Set the background image
-# background_image = """
-# <style>
-# [data-testid="stAppViewContainer"] > .main {
-#     background-image: url('https://neoris.com/documents/20126/241879/data-forecasting.jpg/e49cd67c-e9f2-d08b-ccbc-4aa7e3b4d472?t=1664385965910');
-#     background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
-#     background-position: center;  
-#     background-repeat: no-repeat;
-# }
-# </style>
-# """
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
@@ -101,8 +45,6 @@ background_image = """
 """
 
 st.markdown(background_image, unsafe_allow_html=True)
-
-
 
 
 
@@ -179,7 +121,7 @@ if choice == 'Home Page' :
 
     fig_2.add_trace(go.Scatter(x=prep.index, y=prep['units_sold'],
                              mode='lines', name='Total SKU Units Sold with time'))
-    fig_2.update_layout(margin=dict(r=25))
+    fig_2.update_layout(title_text="The data Distribution over time", margin=dict(r=25)))
     st.plotly_chart(fig_2, use_container_width=True)
 
     best_random_loaded = joblib.load('best_random_model.joblib')
@@ -201,9 +143,9 @@ if choice == 'Home Page' :
 
     fig_3 = go.Figure()
     fig_3.add_trace(go.Scatter(x=prep.index, y=y_pred_list,
-                           mode='lines', name='Total SKU Units Sold with time'))
+                           mode='lines', name='Total SKU Units to be sold (Predicted)'))
     fig_3.add_trace(go.Scatter(x=prep.index, y=y_test_list,
-                            mode='lines', name='Total SKU Units Sold with time'))
+                            mode='lines', name='Total SKU Units Sold with time (Actual)'))
     fig_3.update_layout(margin=dict(r=25))
     st.plotly_chart(fig_3, use_container_width=True)
 

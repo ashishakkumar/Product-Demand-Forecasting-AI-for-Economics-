@@ -91,7 +91,7 @@ with st.sidebar:
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
-    background-image: url('https://github.com/ashishakkumar/Product-Demand-Forecasting-AI-for-Economics-/blob/main/demand.jpeg?raw=true');
+    background-image: url('https://github.com/ashishakkumar/Product-Demand-Forecasting-AI-for-Economics-/blob/main/jpg.png?raw=true');
     background-size: 100vw 100vh;  
     background-position: center;  
     background-repeat: no-repeat;

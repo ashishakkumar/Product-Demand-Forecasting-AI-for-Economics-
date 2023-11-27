@@ -81,7 +81,7 @@ with st.sidebar:
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
-    background-image: url('https://www.cmu.edu/news/stories/archives/2017/september/images/flu-forecast_900x600-min.jpg');
+    background-image: url('https://dlabs.ai/wp-content/uploads/2020/12/sales-prediction-tips-1024x536.png');
     background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
     background-position: center;  
     background-repeat: no-repeat;

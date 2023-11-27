@@ -81,7 +81,7 @@ with st.sidebar:
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
-    background-image: url("https://raw.githubusercontent.com/ashishakkumar/Product-Demand-Forecasting/main/demand-forecasting.webp");
+    background-image: url("demand-forecasting.jpg");
     background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
     background-position: center;  
     background-repeat: no-repeat;

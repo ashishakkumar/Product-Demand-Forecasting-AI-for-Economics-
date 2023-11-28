@@ -120,11 +120,11 @@ if choice == 'Home Page' :
     
 
     text = "Welcome to this interface. We have forecasted the Product Demand for Various Stores and Various SKUs"
-    speed = 6
+    speed = 5
     typewriter(text=text, speed=speed)
 
     text_1 = "This page demonstrates Exploratory Data Analysis about the data being used"
-    speed_1 = 6
+    speed_1 = 5
     typewriter(text=text_1, speed=speed_1)
 
 
@@ -142,7 +142,7 @@ if choice == 'Home Page' :
     st.plotly_chart(fig)
 
     text_2= "The above pie chart shows the top 10 stores selling Maximum Products"
-    speed_2 = 6
+    speed_2 = 5
     typewriter(text=text_2, speed=speed_2)
 
     total_units_sold_sku = prep.groupby('sku_id')['units_sold'].sum().reset_index()
@@ -160,7 +160,7 @@ if choice == 'Home Page' :
     st.plotly_chart(fig)
 
     text_3= "The above pie chart shows the proportions of SKUs being sold"
-    speed_3 = 6
+    speed_3 = 5
     typewriter(text=text_3, speed=speed_3)
 
     top_10_stores_dfs = top10(top_10_stores,'store_id')
@@ -216,7 +216,7 @@ if choice == 'Home Page' :
     speed_4 = 6
     typewriter(text=text_4, speed=speed_4)
 
-    best_random_loaded = joblib.load('/Users/ashish/Documents/aiforeco/best_random_model.joblib')
+    best_random_loaded = joblib.load('best_random_model.joblib')
 
     y_pred = best_random_loaded.predict(X_test)
 

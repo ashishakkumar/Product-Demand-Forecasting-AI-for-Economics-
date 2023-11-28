@@ -314,7 +314,7 @@ if choice == "Top 10 Stores" :
 )
     st.plotly_chart(fig_3)
 
-    path = f'/Users/ashish/Documents/aiforeco/store{selected_store_index + 1}.joblib'
+    path = f'store{selected_store_index + 1}.joblib'
 
     X_train = spiltted_list[selected_store_index][0]
     y_train = spiltted_list[selected_store_index][2]
@@ -405,7 +405,7 @@ if choice == "Top 10 SKUs" :
 )
     st.plotly_chart(fig_3)
 
-    path = f'/Users/ashish/Documents/aiforeco/sku{selected_store_index + 1}.joblib'
+    path = f'sku{selected_store_index + 1}.joblib'
 
     X_train = spiltted_list[selected_store_index][0]
     y_train = spiltted_list[selected_store_index][2]

@@ -4,7 +4,9 @@ Hi everyone!
 
 In this Project for the subject AI for Economics, we have made an application interface that can help us forecast : 
 1. Total units that can be demanded at various stores
-2. Total SKUs that can be demande
+2. Total SKUs that can be demanded
+
+
 both are predicted on a weekly basis
 
 We tried Multiple models like :

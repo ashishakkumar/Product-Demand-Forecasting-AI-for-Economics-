@@ -242,9 +242,9 @@ if choice == 'Home Page' :
 
     fig_3 = go.Figure()
     fig_3.add_trace(go.Scatter(x=prep.index, y=y_pred_list,
-                           mode='lines', name='Total SKU Units Sold with time'))
+                           mode='lines', name='Total SKU Units Sold [Predicted Values]'))
     fig_3.add_trace(go.Scatter(x=prep.index, y=y_test_list,
-                            mode='lines', name='Total SKU Units Sold with time'))
+                            mode='lines', name='Total SKU Units Sold [Actual Values]'))
     fig_3.update_layout(margin=dict(r=25))
     st.plotly_chart(fig_3, use_container_width=True)
 

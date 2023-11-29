@@ -39,7 +39,7 @@ with st.sidebar:
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
-    background-image: url("https://th.bing.com/th/id/OIG.wZ2quBnSMXZhFr2dbIHB?pid=ImgGn");
+    background-image: url("https://images.unsplash.com/photo-1614850523011-8f49ffc73908?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: 100vw 100vh;  # This sets the size to cover 100% of the viewport width and height
     background-position: center;  
     background-repeat: no-repeat;
